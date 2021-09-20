@@ -7,18 +7,22 @@
   "startup": "before",
   "boot": "auto",
   "options": {
-    "beer": true,
-    "wine": true,
-    "liquor": false,
-    "timeszone": "Australia/Queensland",
-    "MQTT_Address": ""
+    "CNI_ADDR": "",
+    "SERIAL_PORT": "",
+    "MQTT_PORT": "",
+    "CMQTTD_AUTH_FILE": "str",
+    "CMQTTD_PROJECT_FILE": "str",
+    "CMQTTD_ARGS": "",
+    "MQTT_SERVER": ""
   },
   "schema": {
-    "beer": "bool",
-    "wine": "bool",
-    "liquor": "bool",
-    "timezone": "str",
-    "MQTT_Address": "str"
+    "CNI_ADDR": "str",
+    "CMQTTD_AUTH_FILE": "str",
+    "CMQTTD_PROJECT_FILE": "str",
+    "SERIAL_PORT": "str",
+    "MQTT_PORT": "str",
+    "CMQTTD_ARGS": "str",
+    "MQTT_SERVER": "str"
   },
   "ports": {
   }
