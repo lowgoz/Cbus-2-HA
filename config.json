@@ -1,6 +1,5 @@
 {
   "name": "Cbus 2 HA",
-  "version": "0.93",
   "version": "0.94",
   "slug": "hello_world",
   "description": "My first real add-on!",
