@@ -1,6 +1,6 @@
 {
   "name": "Cbus 2 HA",
-  "version": "0.6",
+  "version": "0.7",
   "slug": "hello_world",
   "description": "My first real add-on!",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
