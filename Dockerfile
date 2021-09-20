@@ -27,13 +27,13 @@ RUN pip3 install 'parameterized' && \
 
 # cmqttd runner image
 FROM base as cmqttd
-COPY COPYING COPYING.LESSER Dockerfile README.md entrypoint-cmqttd.sh run.sh /
+COPY COPYING COPYING.LESSER Dockerfile README.md entrypoint-cmqttd.sh /
 COPY --from=builder /cbus/dist/cbus-0.2.generic.tar.gz /
 RUN tar zxf /cbus-0.2.generic.tar.gz && rm /cbus-0.2.generic.tar.gz
 
 # Runs cmqttd itself
-CMD /entrypoint-cmqttd.sh
-#CMD echo "Local time zone: ${TZ:-UTC}" && \
+#CMD /entrypoint-cmqttd.sh
+CMD echo "Local time zone: ${TZ:-UTC}" && \
 #    echo -n "Current time: " && date -R && \
-#    cmqttd -b 192.168.1.3 -t 192.168.1.8:10001 --broker-disable-tls
+    cmqttd -b 192.168.1.3 -t 192.168.1.8:10001 --broker-disable-tls
 #    cmqttd -b ${'MQTT_Address'} -t 192.168.1.8:10001 --broker-disable-tls
