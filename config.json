@@ -11,7 +11,7 @@
     "wine": true,
     "liquor": false,
     "timeszone": "Australia/Queensland",
-    "MQTT Address": 192.168.1.3
+    "MQTT Address": "192.168.1.3"
   },
   "schema": {
     "beer": "bool",
