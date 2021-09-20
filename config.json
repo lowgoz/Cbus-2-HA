@@ -10,17 +10,16 @@
     "beer": true,
     "wine": true,
     "liquor": false,
-    "name": "world",
-    "year": 2017
+    "timeszone": "Australia/Queensland",
+    "MQTT Address": 192.168.1.3
   },
   "schema": {
     "beer": "bool",
     "wine": "bool",
     "liquor": "bool",
-    "name": "str",
-    "year": "int"
+    "timezone": "str",
+    "MQTT Address": "int"
   },
   "ports": {
-    "8000/tcp": 8000
   }
 }
