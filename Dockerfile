@@ -8,7 +8,7 @@
 # $ docker build -t cmqttd .
 # $ docker run --device /dev/ttyUSB0 -e "SERIAL_PORT=/dev/ttyUSB0" \
 #     -e "MQTT_SERVER=192.2.0.1" -e "TZ=Australia/Adelaide" -it cmqttd
-COPY run.sh /
+
 FROM alpine:3.11 as base
 
 # Install most Python deps here, because that way we don't need to include build tools in the
@@ -37,4 +37,6 @@ RUN tar zxf /cbus-0.2.generic.tar.gz && rm /cbus-0.2.generic.tar.gz
 #    echo -n "Current time: " && date -R && \
 #    cmqttd -b 192.168.1.3 -t 192.168.1.8:10001 --broker-disable-tls
 #    cmqttd -b ${'MQTT_Address'} -t 192.168.1.8:10001 --broker-disable-tls
+COPY run.sh /
+RUN chmod a+x /run.sh
 CMD [ "/run.sh" ]
