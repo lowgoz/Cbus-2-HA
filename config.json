@@ -11,14 +11,14 @@
     "wine": true,
     "liquor": false,
     "timeszone": "Australia/Queensland",
-    "MQTT Address": "192.168.1.3"
+    "MQTT_Address": "192.168.1.3"
   },
   "schema": {
     "beer": "bool",
     "wine": "bool",
     "liquor": "bool",
     "timezone": "str",
-    "MQTT Address": "int"
+    "MQTT_Address": "int"
   },
   "ports": {
   }
