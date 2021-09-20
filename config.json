@@ -1,6 +1,6 @@
 {
   "name": "Cbus 2 HA",
-  "version": "0.96",
+  "version": "0.97",
   "slug": "Cbus to Home Assistant",
   "description": "Connectes a Clipsal Cbus CNI to a MQTT server",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
