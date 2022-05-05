@@ -30,7 +30,7 @@ FROM base as cmqttd
 COPY COPYING COPYING.LESSER Dockerfile README.md entrypoint-cmqttd.sh /
 COPY --from=builder /cbus/dist/cbus-0.2.generic.tar.gz /
 RUN tar zxf /cbus-0.2.generic.tar.gz && rm /cbus-0.2.generic.tar.gz
-COPY pw
+COPY pw /
 # Runs cmqttd itself
 #CMD /entrypoint-cmqttd.sh
 CMD echo "Local time zone: ${TZ:-UTC}" && \
